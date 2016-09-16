@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sign {
+            keyAlias '101010'
+            keyPassword '101010'
+            storeFile file('/home/jp/AndroidProject/SmallDogAssistantV1/test.jks')
+            storePassword '101010'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "cn.person.smalldogassistantv1"
+        minSdkVersion 9
+        targetSdkVersion 23
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            signingConfig signingConfigs.sign
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile files('libs/AMap_3DMap_V2.2.1.jar')
+    compile files('libs/AMap_Services_V2.2.1.jar')
+    compile files('libs/Android_Location_V1.2.0.jar')
+    compile files('libs/Android_Navi_V1.0.0.jar')
+    compile files('libs/Msc.jar')
+}

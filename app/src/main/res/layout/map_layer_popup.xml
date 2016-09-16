@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_map_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:drawableTop="@drawable/main_map_mode_plain_normal"
+        android:paddingTop="5dp"
+        android:text="平面地图" />
+
+    <Button
+        android:id="@+id/btn_map_satellite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:drawableTop="@drawable/main_map_mode_satellite_normal"
+        android:paddingTop="5dp"
+        android:text="卫星地图" />
+
+    <Button
+        android:id="@+id/btn_map_3d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:drawableTop="@drawable/main_map_mode_3d_normal"
+        android:paddingTop="5dp"
+        android:text="3D地图" />
+
+</LinearLayout>

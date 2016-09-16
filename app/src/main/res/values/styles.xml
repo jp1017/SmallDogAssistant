@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="popupstyle">
+        <item name="android:windowEnterAnimation">@anim/clock_popup_show</item>
+        <item name="android:windowExitAnimation">@anim/clock_popup_dismiss</item>
+    </style>
+
+    <style name="maplayerstyle">
+        <item name="android:windowEnterAnimation">@anim/map_layer_show</item>
+        <item name="android:windowExitAnimation">@anim/map_layer_dismiss</item>
+    </style>
+
+    <style name="list" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/white</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@drawable/list_line</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+
+    <style name="mPrograssBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">42.0dip</item>
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_medium</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">42.0dip</item>
+        <item name="android:minHeight">20.0dip</item>
+    </style>
+
+</resources>

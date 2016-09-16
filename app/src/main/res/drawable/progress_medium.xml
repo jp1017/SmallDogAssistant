@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/ic_querying1" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying2" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying3" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying4" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying5" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying6" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying7" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying8" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying9" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying10" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying11" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying12" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying13" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying14" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying15" />
+    <item android:duration="30" android:drawable="@drawable/ic_querying16" />
+</animation-list>

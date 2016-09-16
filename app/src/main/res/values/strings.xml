@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小狗助手</string>
+    <string name="clock">码表</string>
+    <string name="navigation">导航</string>
+    <string name="route">路线</string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="currentlocation">当前位置</string>
+    <string name="endlocation">输入终点</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="122dp"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_begin_record"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_background"
+        android:drawableLeft="@drawable/btn_begin_record"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="开始记录"
+        android:textColor="@color/deepskyblue" />
+
+    <Button
+        android:id="@+id/btn_personel_record"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_background"
+        android:drawableLeft="@drawable/main_icon_mine"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="个人战绩"
+        android:textColor="@color/deepskyblue" />
+
+    <Button
+        android:id="@+id/btn_clear_route"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_background"
+        android:drawableLeft="@drawable/btn_delete"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="清除轨迹"
+        android:textColor="@color/deepskyblue" />
+</LinearLayout>

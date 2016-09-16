@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/transparent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/start_up_picture"
+        layout="@layout/startup_picture"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/record_panel"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        layout="@layout/record_window_layer"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/btn_box" -->
+<!--             android:layout_width="40dp" -->
+<!--             android:layout_height="40dp" -->
+<!--             android:layout_gravity="left" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:background="@drawable/map_layer_component" -->
+<!--             android:src="@drawable/main_btn_box" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_layer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/map_layer_component"
+                android:src="@drawable/btn_layer_48" />
+
+            <ImageButton
+                android:id="@+id/btn_traffic_condition"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/map_layer_component"
+                android:src="@drawable/main_roadcondition_off" />
+
+<!--             <ImageButton -->
+<!--                 android:id="@+id/btn_ride_navigation" -->
+<!--                 android:layout_width="40dp" -->
+<!--                 android:layout_height="40dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="5dp" -->
+<!--                 android:background="@drawable/map_layer_component" -->
+<!--                 android:src="@drawable/main_icon_nav" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/map_zoom_in_btn"
+                android:src="@drawable/main_icon_zoomin" />
+
+            <ImageButton
+                android:id="@+id/btn_zoom_out"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/map_zoom_out_btn"
+                android:src="@drawable/main_icon_zoomout" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_button_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_clock"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_left"
+            android:drawableLeft="@drawable/main_clock_32"
+            android:drawablePadding="-45dp"
+            android:paddingLeft="50dp"
+            android:text="@string/clock" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_left"
+            android:drawableLeft="@drawable/btn_cancel"
+            android:drawablePadding="-45dp"
+            android:paddingLeft="50dp"
+            android:text="关闭"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_route"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_rigth"
+            android:drawableLeft="@drawable/main_icon_route"
+            android:drawablePadding="-45dp"
+            android:paddingLeft="50dp"
+            android:text="@string/route" />
+    </LinearLayout>
+
+</LinearLayout>

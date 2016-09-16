@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="bd_wallet_titlebar_normal_click_background" type="drawable">#0c000000</item>
+    <item name="bd_wallet_null_drawable" type="drawable">#00ffffff</item>
+    <item name="border_color" type="drawable">#ffcccccc</item>
+    <item name="transparent" type="drawable">#00000000</item>
+    <item name="user_center_tool_bg" type="drawable">#ffffffff</item>
+    <item name="user_center_tool_bg_pressed" type="drawable">#ffebf6ff</item>
+    <item name="screen_background_light" type="drawable">#ffffffff</item>
+
+</resources>
